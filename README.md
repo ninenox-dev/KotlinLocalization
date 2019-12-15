@@ -8,9 +8,47 @@ implementation kotlin-locale-manager:kotlinlocalemanager:0.1.0'
 
 # Getting Started
 
-Create class 
-'''
+Create class and extend ApplicationLocale. 
+```
 class App : ApplicationLocale() {
 
 }
-'''
+```
+In AndroidManifest 
+```
+<application
+        android:name=".App"
+        ...
+        />
+```
+        
+extend AppCompatActivityBase every activity.
+```
+class MainActivity : AppCompatActivityBase() {
+
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        initView()
+
+    }
+
+    private fun initView() {
+        change_language_th_button.setOnClickListener {
+            setNewLocale("TH",true)
+        }
+        change_language_en_button.setOnClickListener {
+            setNewLocale("EN",true)
+        }
+    }
+
+    private fun setNewLocale(language: String, restartProcess: Boolean): Boolean {
+        localeManager!!.setNewLocale(this, language)
+        recreate()
+        return true
+    }
+    
+}
+
+```
