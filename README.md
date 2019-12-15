@@ -22,25 +22,21 @@ In AndroidManifest
         />
 ```
         
-extend AppCompatActivityBase every activity.
+In every activity extend AppCompatActivityBase.
 ```
 class MainActivity : AppCompatActivityBase() {
 
 override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        initView()
-
-    }
-
-    private fun initView() {
+        
         change_language_th_button.setOnClickListener {
             setNewLocale("TH",true)
         }
         change_language_en_button.setOnClickListener {
             setNewLocale("EN",true)
         }
+
     }
 
     private fun setNewLocale(language: String, restartProcess: Boolean): Boolean {
