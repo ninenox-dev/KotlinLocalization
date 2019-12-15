@@ -23,18 +23,16 @@ class MainActivity : AppCompatActivityBase() {
         }
     }
 
-    private fun setNewLocale(
-        language: String,
-        restartProcess: Boolean
-    ): Boolean {
+    private fun setNewLocale(language: String, restartProcess: Boolean): Boolean {
         App.localeManager!!.setNewLocale(this, language)
-        val i = Intent(this, MainActivity::class.java)
-        startActivity(i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
-        if (restartProcess) {
-            System.exit(0)
-        } else {
-            Toast.makeText(this, "Activity restarted", Toast.LENGTH_LONG).show()
-        }
+        recreate()
+//        val i = Intent(this, MainActivity::class.java)
+//        startActivity(i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
+//        if (restartProcess) {
+//            System.exit(0)
+//        } else {
+//            Toast.makeText(this, "Activity restarted", Toast.LENGTH_LONG).show()
+//        }
         return true
     }
 }
