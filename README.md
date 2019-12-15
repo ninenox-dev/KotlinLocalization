@@ -1,8 +1,16 @@
 # KotlinMultiLanguage
-Android Kotlin Multi Language With Locale.
+Android kotlin change language at runtime.
 
 
-dependencies
+# Installation
 
 implementation kotlin-locale-manager:kotlinlocalemanager:0.1.0'
 
+# Getting Started
+
+Create class 
+'''
+class App : ApplicationLocale() {
+
+}
+'''
