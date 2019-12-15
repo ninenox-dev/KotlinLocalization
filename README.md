@@ -1,2 +1,2 @@
 # KotlinMultiLanguage
-android kotlin multi language with locale.
+Android Kotlin Multi Language With Locale.
