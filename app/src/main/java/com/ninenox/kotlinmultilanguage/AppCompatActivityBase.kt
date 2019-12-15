@@ -2,17 +2,19 @@ package com.ninenox.kotlinmultilanguage
 
 import android.content.Context
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 abstract class AppCompatActivityBase : AppCompatActivity() {
+
     override fun attachBaseContext(base: Context) {
         super.attachBaseContext(App.localeManager!!.setLocale(base))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        resetTitle()
+        //resetTitle()
     }
 
     private fun resetTitle() {
@@ -26,5 +28,14 @@ abstract class AppCompatActivityBase : AppCompatActivity() {
             }
         } catch (e: PackageManager.NameNotFoundException) {
         }
+    }
+
+    override fun applyOverrideConfiguration(overrideConfiguration: Configuration?) {
+        if (overrideConfiguration != null) {
+            val uiMode = overrideConfiguration.uiMode
+            overrideConfiguration.setTo(baseContext.resources.configuration)
+            overrideConfiguration.uiMode = uiMode
+        }
+        super.applyOverrideConfiguration(overrideConfiguration)
     }
 }
