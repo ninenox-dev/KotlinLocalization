@@ -30,7 +30,8 @@ class App : ApplicationLocale() {
         />
 ```
 
-3. res add new locale in this demo 
+3. In folder `res` add new locale.
+
 ```
 values-th
    - strings.xml
