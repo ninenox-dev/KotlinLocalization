@@ -45,5 +45,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
     
 }
 ```
+
+![Alt Text](https://media.giphy.com/media/mCmtFOoD6FIaOd83Pw/giphy.gif)
+
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
