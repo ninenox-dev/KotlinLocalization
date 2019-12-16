@@ -14,7 +14,7 @@ implementation 'com.ninenox.kotlinlocalemanager:kotlin-locale-manager:1.0.0'
 
 # Getting Started
 
-Create class and extend `ApplicationLocale`.
+1. Create class and extend `ApplicationLocale`.
 
 ```
 class App : ApplicationLocale() {
@@ -22,7 +22,7 @@ class App : ApplicationLocale() {
 }
 ```
 
-In `AndroidManifest.xml`
+2. In `AndroidManifest.xml`
 ```
 <application
         android:name=".App"
@@ -30,7 +30,15 @@ In `AndroidManifest.xml`
         />
 ```
 
-In every activity extend `AppCompatActivityBase`.
+3. res add new locale in this demo 
+```
+values-th
+   - strings.xml
+values-en
+   - strings.xml
+```
+
+4. In every activity extend `AppCompatActivityBase`.
 
 ```
 class MainActivity : AppCompatActivityBase() {
