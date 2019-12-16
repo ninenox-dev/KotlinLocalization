@@ -1,7 +1,7 @@
 # KotlinMultiLanguage
 Android kotlin library for change ui language in android application at runtime.
 
-![Alt Text](https://media.giphy.com/media/mCmtFOoD6FIaOd83Pw/giphy.gif)
+![Alt Text](https://media.giphy.com/media/VEcDJtSPLjQ6X3NRbs/giphy.gif)
 
 
 # Installation
