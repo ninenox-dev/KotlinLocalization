@@ -39,7 +39,7 @@ values-en
    - strings.xml
 ```
 
-4. In every activity extend `AppCompatActivityBase`.
+4. In every activitys extend `AppCompatActivityBase` for setting language.
 
 ```
 class MainActivity : AppCompatActivityBase() {
@@ -48,16 +48,21 @@ override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
+        ...
+    }
+    
+}
+```
+
+5. call funtion `setNewLocale("...")` to change language.
+
+```
         change_language_th_button.setOnClickListener {
             setNewLocale("TH")
         }
         change_language_en_button.setOnClickListener {
             setNewLocale("EN")
         }
-
-    }
-    
-}
 ```
 
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
