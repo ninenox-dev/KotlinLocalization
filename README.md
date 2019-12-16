@@ -39,7 +39,7 @@ values-en
    - strings.xml
 ```
 
-4. In every activitys extend `AppCompatActivityBase` for setting language.
+4. If you want setting language any activity extend `AppCompatActivityBase` on it.
 
 ```
 class MainActivity : AppCompatActivityBase() {
