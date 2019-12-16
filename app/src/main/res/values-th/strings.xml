@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">DemoKotlinLocaleManager</string>
     <string name="hello_world">สวัสดีโลก!</string>
+    <string name="hello_blank_fragment">สวัสดี fragment</string>
 </resources>

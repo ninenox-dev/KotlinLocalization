@@ -1,9 +1,9 @@
 package com.ninenox.demokotlinlocalemanager
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ninenox.kotlinlocalemanager.AppCompatActivityBase
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivityBase() {
 
@@ -18,5 +18,16 @@ class MainActivity : AppCompatActivityBase() {
         en_button.setOnClickListener {
             setNewLocale("en")
         }
+
+        addFragment()
+    }
+
+    fun addFragment() {
+        val mFragmentManager = supportFragmentManager
+        val fragmentTransaction =
+            mFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_frame_layout, BlankFragment()).commit()
+
+
     }
 }
