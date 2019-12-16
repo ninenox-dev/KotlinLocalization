@@ -42,12 +42,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
         }
 
     }
-
-    private fun setNewLocale(language: String, restartProcess: Boolean): Boolean {
-        localeManager!!.setNewLocale(this, language)
-        recreate()
-        return true
-    }
     
 }
 ```
