@@ -35,10 +35,10 @@ override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_main)
         
         change_language_th_button.setOnClickListener {
-            setNewLocale("TH",true)
+            setNewLocale("TH")
         }
         change_language_en_button.setOnClickListener {
-            setNewLocale("EN",true)
+            setNewLocale("EN")
         }
 
     }
