@@ -1,5 +1,8 @@
 # KotlinMultiLanguage
-Android kotlin change language at runtime.
+Android kotlin library for change ui language in android application at runtime.
+
+![Alt Text](https://media.giphy.com/media/mCmtFOoD6FIaOd83Pw/giphy.gif)
+
 
 # Installation
 
@@ -45,3 +48,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
     
 }
 ```
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
