@@ -61,7 +61,7 @@ setNewLocale("EN") // Sample "EN","TH","DE"...
         
 ```
 
-6. Current code language.
+6. Get current code language string.
 ```
 LocaleManager(this).language.toString() // "EN"
 ```
