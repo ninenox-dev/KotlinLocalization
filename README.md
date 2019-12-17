@@ -55,14 +55,14 @@ override fun onCreate(savedInstanceState: Bundle?) {
         }
         ...
         
-        //print current code language string
-        println(LocaleManager(this).language.toString()) // "EN"
-        
     }
     
 }
 ```
-
+5. Current code language.
+```
+LocaleManager(this).language.toString()
+```
         
 
 
