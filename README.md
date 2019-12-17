@@ -39,7 +39,7 @@ values-en
    - strings.xml
 ```
 
-4. In any activity extend `AppCompatActivityBase` on it.
+4. In any Activity extend `AppCompatActivityBase` on it.
 
 ```
 class MainActivity : AppCompatActivityBase() {
