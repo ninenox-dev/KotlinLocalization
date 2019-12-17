@@ -49,13 +49,14 @@ override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.activity_main)
         
         //call funtion `setNewLocale("...")` to change language.
-        change_language_th_button.setOnClickListener {
-            setNewLocale("TH")
-        }
+        
         change_language_en_button.setOnClickListener {
-            setNewLocale("EN")
+            setNewLocale("EN") // EN,TH,DE...
         }
         ...
+        
+        //get current code language string
+        val language:String = LocaleManager(this).language.toString() //"EN"
         
     }
     
