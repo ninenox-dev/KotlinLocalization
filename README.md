@@ -39,7 +39,7 @@ values-en
    - strings.xml
 ```
 
-4. In any Activity extend `AppCompatActivityBase` on it.
+4. In any `Activity` extend `AppCompatActivityBase` on it.
 
 ```
 class MainActivity : AppCompatActivityBase() {
@@ -48,15 +48,15 @@ override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
-        //call funtion `setNewLocale("...")` to change language.
+        //call funtion setNewLocale("...") to change language.
         
         change_language_en_button.setOnClickListener {
-            setNewLocale("EN") // EN,TH,DE...
+            setNewLocale("EN") // Sample "EN","TH","DE"...
         }
         ...
         
         //get current code language string
-        val language:String = LocaleManager(this).language.toString() //"EN"
+        val language:String = LocaleManager(this).language.toString() // print "EN"
         
     }
     
