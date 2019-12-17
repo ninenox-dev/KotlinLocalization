@@ -55,8 +55,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
         }
         ...
         
-        //get current code language string
-        val language:String = LocaleManager(this).language.toString() // print "EN"
+        //print current code language string
+        println(LocaleManager(this).language.toString()) // "EN"
         
     }
     
