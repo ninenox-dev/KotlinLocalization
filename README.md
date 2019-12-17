@@ -48,20 +48,22 @@ override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
-        //call funtion setNewLocale("...") to change language.
-        
-        change_language_en_button.setOnClickListener {
-            setNewLocale("EN") // Sample "EN","TH","DE"...
-        }
         ...
         
     }
     
 }
 ```
-5. Current code language.
+5. Call funtion `setNewLocale("...")` for set current language and refresh ui.
 ```
-LocaleManager(this).language.toString()
+
+setNewLocale("EN") // Sample "EN","TH","DE"...
+        
+```
+
+6. Current code language.
+```
+LocaleManager(this).language.toString() // "EN"
 ```
         
 
