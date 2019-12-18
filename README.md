@@ -1,4 +1,4 @@
-<img src="" alt="Relase Version" data-canonical-src="https://img.shields.io/maven-central/v/io.mockk/mockk.svg?label=release" style="max-width:100%;"> <img src="" alt="Download" data-canonical-src="https://api.bintray.com/packages/kotlin/kotlinx/kotlinx.coroutines/images/download.svg?version=1.3.3" style="max-width:100%;"> <img src="" alt="Android" data-canonical-src="https://img.shields.io/badge/android-support-green.svg" style="max-width:100%;">
+
 
 # KotlinMultiLanguage
 Android kotlin library for change ui language in android application at runtime.
