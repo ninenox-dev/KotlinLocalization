@@ -1,4 +1,4 @@
-
+<img src="https://camo.githubusercontent.com/60ff9343605609fe208bb12df18d0a566658f316/68747470733a2f2f696d672e736869656c64732e696f2f636f636f61706f64732f762f5278416c616d6f666972652e7376673f7374796c653d666c6174" alt="Version" data-canonical-src="https://img.shields.io/cocoapods/v/RxAlamofire.svg?style=flat" style="max-width:100%;">
 
 # KotlinMultiLanguage
 Android kotlin library for change ui language in android application at runtime.
