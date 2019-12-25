@@ -56,7 +56,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     
 }
 ```
-5. Call funtion `setNewLocale("...")` for set current language and refresh ui.
+5. Call funtion `setNewLocale("...")` for set current language and refresh UI.
 ```
 
 setNewLocale("EN") // Sample "EN","TH","DE"...
