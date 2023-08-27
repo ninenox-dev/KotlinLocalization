@@ -1,4 +1,4 @@
-package com.ninenox.demokotlinlocalemanager
+package com.ninenox.kotlinmultilanguage
 
 import org.junit.Test
 

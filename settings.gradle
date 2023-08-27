@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name='DemoKotlinLocaleManager'
+include ':app', ':kotlinlocalemanager'
+rootProject.name='KotlinMultiLanguage'
